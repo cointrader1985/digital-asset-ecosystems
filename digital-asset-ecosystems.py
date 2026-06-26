@@ -85,6 +85,20 @@ def main():
     print("Nonce:", tx["nonce"])
     print("Gas:", tx["gas"])
 
+    print("Transactions processed")
+    print("Volume tracking enabled")
+    print("Validators available")
+
+    print("Signing completed")
+
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as error:
+        print("Error:", error)
+
+summary = {
+    "protocol": protocol,
     "market": cryptocurrencies,
     "validators": Validators,
 }
